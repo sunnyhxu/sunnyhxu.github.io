@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Haoyang Xu</title>
+        <link rel="stylesheet" href="css/light.css" id="theme-link">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" />
+        <script>
+            function toggleTheme() {
+                const themeLink = document.getElementById("theme-style");
+                if (themeLink.getAttribute("href") === "css/light.css") {
+                    themeLink.setAttribute("href", "css/dark.css");
+                } else {
+                    themeLink.setAttribute("href", "css/light.css");
+                }
+            }
+        </script>
+    </head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">Haoyang Xu</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <!-- <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+        </nav>
+
+        <div class="main-content">
+            <div class="top-section">
+                <h2>About</h2>
+                <div class="left-column">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="Haoyang Xu">
+                    </div>
+                    <div class="profile-info">
+                        <h1>Haoyang Xu</h1>
+                        <div class="social-links">
+                            <a href="mailto:haoyang_xu@brown.edu" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://github.com/sunnyhxu" title="GitHub"><i class="fab fa-github"></i></a>
+                            <!-- <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> -->
+                            <!-- <a href="https://orcid.org/YOUR-ORCID-ID" title="ORCID"><i class="ai ai-orcid"></i></a> -->
+                            <a href="https://www.linkedin.com/in/haoyang-xu-brownu/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <!-- <a href="https://twitter.com/yourusername" title="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div class="about-section">
+                        <!-- <h2>About Me</h2> -->
+                        <p>
+                            I am a first-year student at <a href="https://brown.edu">Brown University</a> concentrating in Math-Computer Science. 
+                            I am broadly interested in combinatorics, machine learning, and formal methods.</br></br>
+                            Email Address: [first name][last name][at]brown.edu</br></br>
+                            CV: <a href="index.html">April 2025</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Projects</h2>
+                <h3>Math projects</h3>
+                <ul>
+                    <li><b>Algebriac Combinatorics</b> with Nathan Phan, advised by <a href="https://ethanpartida.github.io/">Ethan Partida</a>, 
+                        Brown University Directed Reading Program in Spring 2025.</li>
+                    <p>
+                        We read <i>Algebraic Combinatorics: Walks, Trees, Tableaux, and More</i> by Richard Stanley 
+                        to study walks in graphs, cubes, radon transformation, etc., 
+                        and will make a poster on the Sperner property of posets.
+                    </p>
+                </ul>
+                <h3>CS projects</h3>
+                <ul>
+                    <li><b>Using Intra-Stock, Inter-Stock, and Temporal Aggregation to Predict Stock Market Returns and Stock Selections</b>, 
+                        with Prottoya Chowdhury, Bailing Hou, and Devesh Kumar, final project for Brown CSCI1470 Deep Learning.</li>
+                    <p>The project will re-implement the <a href="https://arxiv.org/pdf/2312.15235">MASTER</a> model by Li et al. 2024, 
+                        a market-guided stock transformer model, and train on the <a href="https://jkpfactors.com/">Global Factor data</a> 
+                        to predict US stock prices. 
+                    <a href="https://github.com/sunnyhxu/MASTER">Github repo</a>.</p>
+                    <li><b><a href="https://pat-music.github.io">PatMu</a></b>, with Melody Chen and Joanne Ding, 
+                        <i><b>Best First-time Hack</b></i> at <a href="https://hack-brown-2025.devpost.com/project-gallery">Hack@Brown 2025</a>.</li>
+                    <p>Patmu is an AR-powered web game in which users <i>pat</i> to create music. The game utilizes computer vision to detect movements and 
+                        play virtual instruments like drums, piano chords, and melodic sequences.
+                    <a href="https://github.com/Pat-Music/pat-music.github.io">Github repo</a>.</p>
+                </ul>
+                <h3>Research</h3>
+                <ul>
+                    <li><b>Lunar Regolith Thickness Evaluation with Rocky and non-Rocky Ejecta Craters</b>, advised by Dr. Andrea Rajšić,
+                    Brown University <b><i>Undergraduate Teaching and Research Awards</i></b>.</li>
+                    <p>I mapped fresh craters on lunar surfaces and classified them based on their morphology. Calculating excavation depth with crater diameters, 
+                        I estimated lunar regolith thickness and compared them with on-site seismic data on Apollo landing sites.</p>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Haoyang Xu. Last updated: April 2025.</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

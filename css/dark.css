@@ -1,0 +1,174 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005a99;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #222;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.nav-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative
+}
+
+.nav-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.nav-menu {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: inherit;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.nav-menu li a.active {
+    text-decoration: underline;
+}
+
+.nav-menu li a:hover {
+    color: #007acc;
+}
+
+.main-content {
+    max-width: 75%;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.top-section {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.left-column {
+    flex: 0 0 25%;
+    max-width: 30%;
+    margin-left: 10%;
+}
+
+.profile-image img {
+    width: 100%;
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    font-size: 20px;
+    margin: 0 8px;
+    color: inherit;
+}
+
+.social-links a:hover {
+    color: #007acc;
+}
+
+.right-column {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin-left: 5%;
+}
+
+.top-section h2 {
+    font-size: 28px;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #007acc;
+}
+
+.about-section p {
+    margin-top: 50px;
+    line-height: 1.6;
+}
+
+.project-section {
+    margin-top: 30px;
+}
+
+.project-section h2 {
+    font-size: 28px;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    margin-bottom: 25px;
+}
+
+.project-item h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: inherit;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+#theme-toggle:hover {
+    color: #007acc;
+}
