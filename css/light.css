@@ -18,17 +18,23 @@ a:hover {
 .navbar {
     width: 100%;
     background-color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .nav-container {
+    max-width: 800px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative
+    position: relative;
+    padding: 0 20px;
 }
 
 .nav-logo a {
@@ -65,9 +71,10 @@ a:hover {
 }
 
 .main-content {
-    max-width: 75%;
-    margin: auto;
-    padding: 30px 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 90px 20px 30px;
 }
 
 .top-section {
@@ -79,12 +86,13 @@ a:hover {
 }
 
 .left-column {
-    flex: 0 0 25%;
-    max-width: 30%;
-    margin-left: 10%;
+    flex: 0 0 200px;
+    max-width: 25%;
+    margin-left: 30px;
 }
 
 .profile-image img {
+    padding-top: 50px;
     width: 100%;
 }
 
@@ -109,9 +117,9 @@ a:hover {
 }
 
 .right-column {
-    flex: 0 0 45%;
+    flex: 0 0 400px;
     max-width: 45%;
-    margin-left: 5%;
+    margin-left: 30px;
 }
 
 .top-section h2 {
@@ -168,8 +176,9 @@ footer {
     cursor: pointer;
     color: inherit;
     position: absolute;
-    top: 15px;
+    top: 50%;
     right: 20px;
+    transform: translateY(-50%);
 }
 
 #theme-toggle:hover {
