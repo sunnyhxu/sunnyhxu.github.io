@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscellaneous</title>
+    <link rel="stylesheet" href="css/light.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">Haoyang Xu</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="miscellaneous.html" class="active">Miscellaneous</a></li>
+                    <!-- <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="miscellaneous-section">
+                <h2>Miscellaneous</h2>
+                <h3>Linguistics</h3>
+                <img src="images/IOL2023.jpg" alt="Photo of Team China at IOL2023">
+                <p>I am a linguistics lover and make linguistics puzzles. I am a former member of Team China in 
+                International Linguistics Olympiad (<a href="https://ioling.org/">IOL</a>) 2023.
+                I am now in the team of China National Linguistics Olympiad (<a href="http://www.ioling.org.cn/">IOLC</a>) and 
+                the team of Mirturl Lingsuitcs Open (<a href="https://mirturl-ol.github.io/mol3/">MOL</a>).</p>
+                <ul>
+                    <li>Problems I worte: <a>Chinese (Simplified)</a>, <a>English</a></li>
+                    <li>Linguistics Olympiad websites <a>list</a></li>
+                    <li>Useful <a>resources</a> for competitors</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 Haoyang Xu. Last updated: April 2025.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const themeLink = document.getElementById("theme-style");
+            if (themeLink.getAttribute("href") === "css/light.css") {
+                themeLink.setAttribute("href", "css/dark.css");
+            } else {
+                themeLink.setAttribute("href", "css/light.css");
+            }
+        }
+    </script>
+</body>
+</html>

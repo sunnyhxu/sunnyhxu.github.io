@@ -155,6 +155,25 @@ a:hover {
     margin-bottom: 8px;
 }
 
+.miscellaneous-section {
+    clear: both;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.miscellaneous-section h2 {
+    font-size: 28px;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.miscellaneous-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
 footer {
     margin-top: 60px;
     padding: 20px;
