@@ -7,16 +7,7 @@
         <link rel="stylesheet" href="css/light.css" id="theme-link">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" />
-        <script>
-            function toggleTheme() {
-                const themeLink = document.getElementById("theme-style");
-                if (themeLink.getAttribute("href") === "css/light.css") {
-                    themeLink.setAttribute("href", "css/dark.css");
-                } else {
-                    themeLink.setAttribute("href", "css/light.css");
-                }
-            }
-        </script>
+        <script src="js/main.js"></script>
     </head>
 <body>
     <div class="container">
@@ -64,6 +55,8 @@
                     <div class="about-section">
                         <!-- <h2>About Me</h2> -->
                         <p>
+                            Hi! My name is Haoyang Xu. </br>
+                            {Haoyang, Sunny, <span lang="cn">徐昊阳</span>} are equally good for me.</br></br>
                             I am a first-year student at <a href="https://brown.edu">Brown University</a> concentrating in Math-Computer Science. 
                             I am broadly interested in combinatorics, machine learning, and formal methods.</br></br>
                             Email Address: haoyang_xu [at] brown [dot] edu</br></br>
@@ -90,9 +83,8 @@
                     <li><b>Using Intra-Stock, Inter-Stock, and Temporal Aggregation to Predict Stock Market Returns and Stock Selections</b>, 
                         with Prottoya Chowdhury, Bailing Hou, and Devesh Kumar, final project for Brown CSCI1470 Deep Learning.
                         <a href="https://github.com/sunnyhxu/MASTER">Github repo</a>.</li>
-                    <p>The project will re-implement the <a href="https://arxiv.org/pdf/2312.15235">MASTER</a> model by Li et al. 2024, 
-                        a market-guided stock transformer model, and train on the <a href="https://jkpfactors.com/">Global Factor data</a> 
-                        to predict US stock prices. </p>
+                    <p>The project implements a market-guided stock transformer model with intra-stock, inter-Stock, and temporal Aggregation
+                        and trains on the <a href="https://jkpfactors.com/">Global Factor data</a> to predict US stock prices and returns. </p>
                     <li><b><a href="https://pat-music.github.io">PatMu</a></b>, with Melody Chen and Joanne Ding, 
                         <i><b>Best First-time Hack</b></i> at <a href="https://hack-brown-2025.devpost.com/project-gallery">Hack@Brown 2025</a>.
                         <a href="https://github.com/Pat-Music/pat-music.github.io">Github repo</a>.</li>
@@ -113,7 +105,5 @@
             <p>&copy; 2025 Haoyang Xu. Last updated: April 2025.</p>
         </footer>
     </div>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

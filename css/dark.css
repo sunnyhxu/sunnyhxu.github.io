@@ -6,6 +6,10 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+*[lang="cn"] {
+    font-family: "KaiTi", "SimSun", "serif";
+}
+
 a {
     color: #007acc;
     text-decoration: none;
